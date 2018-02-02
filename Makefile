@@ -1,7 +1,7 @@
 # partie du makefile à modifier
 CXX=g++
 # option par défaut de compilation: -std=c++0x si c++11 n'est pas reconnu
-CXXFLAGS=-pipe -std=c++11 -Wall -Wextra -Wconversion -Wpadded -pedantic -O3
+CXXFLAGS=-pipe -std=c++11 -Wall -Wextra -Wconversion -pedantic -O3
 # liste de l'ensemble des fichiers sources cpp
 SRCS=$(wildcard *.cpp)
 OBJS=$(SRCS:.cpp=.o)
@@ -32,6 +32,4 @@ mrproper:	clean
 
 # DO NOT DELETE THIS LINE
 
-prog.o: mod1.h mod2.h
-mod1.o: mod1.h mod2.h
-mod2.o: mod2.h
+Second.o: Second.h
